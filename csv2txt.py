@@ -11,4 +11,4 @@ def csv2str(filename, columnName):
     with open(filename + '.txt', 'w') as txtfile:
         txtfile.write(st)
 
-csv2str('elonmusk_tweets', 'Text')
+csv2txt('elonmusk_tweets', 'Text')
