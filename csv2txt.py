@@ -1,6 +1,6 @@
 import pandas as pd
 
-def csv2str(filename, columnName):
+def csv2txt(filename, columnName):
     df = pd.read_csv(filename + '.csv')
     st = ''
     for sent in df[columnName].sample(n = 500):
