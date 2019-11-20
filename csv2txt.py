@@ -9,6 +9,6 @@ def csv2str(filename, columnName):
     # st.replace('\'b', '')
     # st.replace('"b', '')
     with open(filename + '.txt', 'w') as txtfile:
-        txtfile.write(st)
+        txtfile.write(st.encode('utf-8'))
 
-csv2str('elonmusk_tweets'z, 'Text')
+csv2txt('Donald-Tweets!', 'Tweet_Text')
