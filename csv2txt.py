@@ -1,9 +1,9 @@
 import pandas as pd
 
-def csv2str(filename):
+def csv2str(filename, columnName):
     df = pd.read_csv(filename + '.csv')
     st = ''
-    for sent in df['text'].sample(n = 500):
+    for sent in df[columnName].sample(n = 500):
         if 'http' not in sent:
             st += sent + '. '
     # st.replace('\'b', '')
