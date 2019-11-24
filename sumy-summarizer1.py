@@ -14,5 +14,5 @@ summary = summarizer(parser.document, 20)
 
 with open('donaldtweetsummary' + '.txt', 'w') as txtfile:
 	for sentence in summary:
-        txtfile.write(sentence)
+        txtfile.write(sentence + '\n')
         #txtfile.write(str(st.encode('utf-8')))
