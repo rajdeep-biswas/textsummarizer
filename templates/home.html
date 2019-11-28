@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Textify</title>
-</head>
-<body>
+{% extends "layout.html" %}
+
+{% block body %}
 	<p>Please enter your text in the following box</p>
 	<form action="/landingpage">
 		<textarea name="text"></textarea><br />
@@ -14,7 +11,5 @@
 		<input type="radio" name="outtype" value="lsa"> LSA<br />
 		<input type="text" name="count" value=5><br />
 		<input type="submit" value="Produce">
-	</form> 
-
-</body>
-</html>
+	</form>
+{% endblock %}

@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Summarization</title>
-</head>
-<body>
+{% extends "layout.html" %}
+
+{% block body %}
 	<ul>
 		{% for sentence in text %}
 		<li>{{sentence}}</li>
 		{% endfor %}
 	</ul>
-</body>
-</html>
+{% endblock %}

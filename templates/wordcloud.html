@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>WordCloud</title>
-</head>
-<body>
+{% extends "layout.html" %}
+
+{% block body %}
 	<p>please clear browser cache and reload page if result isn't as desired</p>
 	<img src="{{url_for('static', filename='images/save.png')}}">
-</body>
-</html>
+{% endblock %}
