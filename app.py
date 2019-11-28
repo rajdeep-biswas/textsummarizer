@@ -3,6 +3,8 @@ from wordclouder import WC
 from sumysummarizer import lexranker, luhner, lsaer
 
 app = Flask(__name__)
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+#app.config["CACHE_TYPE"] = "null"
 
 @app.route("/")
 def hello():
@@ -13,6 +15,8 @@ def landingpage():
 	choice = request.args.get('outtype')
 	text = request.args.get('text')
 	count = request.args.get('count')
+	if not text:
+		return render_template("noinput.html")
 	if choice == 'wc':
 		return wordcloud(text)
 	elif choice == 'lexrank':

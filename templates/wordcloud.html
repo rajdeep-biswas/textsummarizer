@@ -1,6 +1,10 @@
 {% extends "layout.html" %}
 
+{% block title %}Wordcloud{% endblock %}
+
 {% block body %}
-	<p>please clear browser cache and reload page if result isn't as desired</p>
+	<h2>⛅ We hope you like clouds, especially this one. 🍸</h2>
 	<img src="{{url_for('static', filename='images/save.png')}}">
+	<p id="footer">please clear browser cache and reload page if result isn't as desired</p>
+	<a href='/'>⬅️ Go Back</a>
 {% endblock %}

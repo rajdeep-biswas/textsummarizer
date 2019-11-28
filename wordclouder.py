@@ -9,7 +9,7 @@ import pandas as pd
 def WC(text):
 	# Reads 'Youtube04-Eminem.csv' file 
 
-	wordcloud = WordCloud(width = 900, height = 500, background_color ='white', min_font_size = 10).generate(text) 
+	wordcloud = WordCloud(width = 900, height = 500, background_color ='#DCE1DE', min_font_size = 10).generate(text) 
 
 	# plot the WordCloud image                   
 	plt.figure(figsize = (9, 5), facecolor = None) 
