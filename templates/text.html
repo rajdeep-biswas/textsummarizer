@@ -3,6 +3,8 @@
 {% block title %}Summary{% endblock %}
 
 {% block body %}
+	<h2>⛅ We hope you like clouds, especially this one. 🍸</h2>
+	<img src="{{url_for('static', filename='images/save.png')}}">
 	<h2>Your text has been summarized 💪</h2>
 	<ul>
 		{% for sentence in text %}

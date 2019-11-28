@@ -17,18 +17,13 @@ def landingpage():
 	count = request.args.get('count')
 	if not text:
 		return render_template("noinput.html")
-	if choice == 'wc':
-		return wordcloud(text)
-	elif choice == 'lexrank':
+	WC(str(text))
+	if choice == 'lexrank':
 		return lexrank(text, count)
 	elif choice == 'luhn':
 		return luhn(text, count)
 	elif choice == 'lsa':
 		return lsa(text, count)
-
-def wordcloud(text):
-	WC(str(text))
-	return render_template("wordcloud.html")
 
 def lexrank(text, count):
 	return render_template("text.html", text = lexranker(text, count))
