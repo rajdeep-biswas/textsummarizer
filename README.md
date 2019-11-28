@@ -16,6 +16,5 @@ note: you might need to run the following python snippet separately before runni
 UPDATED PRECISE INSTRUCTIONS TO RUN PROJECT -
 1. pip install packages: pandas, sumy, wordcloud, flask
 2. open a python terminal and enter the following
-`import nltk
-nltk.download('punkt')`
+`import nltk` and `nltk.download('punkt')`
 3. flask run
