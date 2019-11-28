@@ -23,6 +23,7 @@ def landingpage():
 		return lsa(text, count)
 
 def wordcloud(text):
+	WC(str(text))
 	return render_template("wordcloud.html")
 
 def lexrank(text, count):
