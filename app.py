@@ -15,7 +15,7 @@ def landingpage():
 	choice = request.args.get('outtype')
 	text = request.args.get('text')
 	count = request.args.get('count')
-	if not text or not text.trim():
+	if not text or not text.strip():
 		return render_template("noinput.html")
 	if choice == 'wc':
 		return wordcloud(text)
