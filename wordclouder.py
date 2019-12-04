@@ -2,7 +2,9 @@
 # https://www.geeksforgeeks.org/generating-word-cloud-python/
 
 # importing all necessery modules 
-from wordcloud import WordCloud, STOPWORDS 
+from wordcloud import WordCloud, STOPWORDS
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt 
 import pandas as pd 
 
